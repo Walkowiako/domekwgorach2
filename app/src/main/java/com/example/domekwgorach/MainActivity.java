@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         TextView2 = findViewById(R.id.textView2);
         Button buttonLike = findViewById(R.id.button);
         Button buttonDelete = findViewById(R.id.button2);
+        Button buttonSave = findViewById(R.id.button3);
+       
         buttonLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (count > 0) {
-                    --count;
+                if (count > 0) { --count;
                     TextView2.setText(count + text);
                 }
             }});}}
